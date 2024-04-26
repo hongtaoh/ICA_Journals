@@ -52,3 +52,25 @@ Datasets there are used to generate Figure 6 & 7 in the paper.
 
   - `113_names_for_api_reliance_checking.csv`: I randomly selected 113 names from the final dataset of 11292 authors for one author to check how reliant we are on the automatic results from API. This is the result of `notebooks/workflow/workflow-notebooks/2023-02-10-get-113-names-to-see-reliance-on-api-automatic-results.ipynb`. Haley hand coded these 113 names and the result is in `113_names_for_api_reliance_checking_result.csv`.
 
+### Processed
+
+I first get `author_with_pred.csv`. Then the following:
+
+- `ica_paper_df_with_type.csv`, type means research paper or not
+- `author_with_pred_with_type.csv`, type means research paper or not
+- `research_paper_df.csv`, papers that are research papers
+- `research_author_with_pred.csv`, authors of research papers with all kinds of predictions (race, gender, aff)
+- `authors_to_study.csv`, this is different from research authors because I removed those research papers whose affiliation is NaN
+- `dois_to_study.csv`, research papers with valid aff information
+- `papers_to_study.csv`, research papers with valid affiliation information
+
+Then, after all the manual coding is done (race, gender, and aff), I generated `authorid_with_variables.csv`, i.e., author ID with the associated aff country, aff type, gender, and race. **NOTE THAT WE INTENTIONALLY DELETED THESE FILES FOR PRIVACY CONCERNS.**
+
+Finally, I generated:
+
+- `authors_to_study_expanded.csv` **NOTE THAT WE INTENTIONALLY REMOVED IDENTIFICATION INFORMATION FOR PRIVACY CONCERNS.**
+- `papers_to_study_expanded.csv`
+
+Those two files are the most complete ones.
+
+- `gscholar_data_combined.csv`, this is the final google scholar data. For details of how I got this data, see the section of "Google scholar data".
