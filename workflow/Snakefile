@@ -92,91 +92,91 @@ GSCHOLAR_DATA_COMBINED = pjoin(PROCESSED_DATA_DIR, 'gscholar_data_combined.csv')
 
 rule all:
     input:
-        # ICA_PAPER_DF,
-        # ICA_PAPER_DATA,
-        # ICA_AUTHOR_DATA,
-        # ICA_ERROR_URLS,
-        # AUTHOR_WITH_GENDER,
-        # AUTHOR_WITH_PRED_RAW,
-        # AUTHOR_WITH_PRED,
-        # ICA_PAPER_DF_WITH_TYPE, 
-        # AUTHOR_WITH_PRED_WITH_TYPE,
-        # RESEARCH_PAPER_DF,
-        # RESEARCH_AUTHOR_WITH_PRED,
-        # AUTHORS_TO_STUDY,
-        # DOIS_TO_STUDY,
-        # PAPERS_TO_STUDY,
-        # AUTHORID_WITH_VARS,
+        ICA_PAPER_DF,
+        ICA_PAPER_DATA,
+        ICA_AUTHOR_DATA,
+        ICA_ERROR_URLS,
+        AUTHOR_WITH_GENDER,
+        AUTHOR_WITH_PRED_RAW,
+        AUTHOR_WITH_PRED,
+        ICA_PAPER_DF_WITH_TYPE, 
+        AUTHOR_WITH_PRED_WITH_TYPE,
+        RESEARCH_PAPER_DF,
+        RESEARCH_AUTHOR_WITH_PRED,
+        AUTHORS_TO_STUDY,
+        DOIS_TO_STUDY,
+        PAPERS_TO_STUDY,
+        AUTHORID_WITH_VARS,
         AUTHORS_TO_STUDY_EXPANDED,
         PAPERS_TO_STUDY_EXPANDED,
-        # GSCHOLAR_DATA,
-        # GSCHOLAR_DATA_COMBINED,
+        GSCHOLAR_DATA,
+        GSCHOLAR_DATA_COMBINED,
 
-# # scrape ica paper dois
-# rule scrape_ica_paper_dois:
-#     output: ICA_PAPER_DF
-#     shell: "python scripts/scrape_ica_paper_dois.py {output}"
+# scrape ica paper dois
+rule scrape_ica_paper_dois:
+    output: ICA_PAPER_DF
+    shell: "python scripts/scrape_ica_paper_dois.py {output}"
 
-# # scrape ica author and paper data
-# rule scrape_ica_author_data:
-#     input: ICA_PAPER_DF
-#     output: ICA_PAPER_DATA, ICA_AUTHOR_DATA, ICA_ERROR_URLS
-#     shell: "python scripts/scrape_ica_author_data.py {input} {output}"
+# scrape ica author and paper data
+rule scrape_ica_author_data:
+    input: ICA_PAPER_DF
+    output: ICA_PAPER_DATA, ICA_AUTHOR_DATA, ICA_ERROR_URLS
+    shell: "python scripts/scrape_ica_author_data.py {input} {output}"
 
-# # get author gender raw predictions
-# rule get_author_with_gender:
-#     input: ICA_AUTHOR_DATA, 
-#     output: AUTHOR_WITH_GENDER
-#     shell: "python scripts/get_author_with_gender.py {input} {output}"
+# get author gender raw predictions
+rule get_author_with_gender:
+    input: ICA_AUTHOR_DATA, 
+    output: AUTHOR_WITH_GENDER
+    shell: "python scripts/get_author_with_gender.py {input} {output}"
 
-# # get race and affiliations. Raw because I'll change column order later
-# rule get_author_with_pred_raw:
-#     input: 
-#         AUTHOR_WITH_GENDER, 
-#         ROR_RAW_DATA
-#     output: AUTHOR_WITH_PRED_RAW
-#     shell: "python scripts/get_author_with_pred_raw.py {input} {output}"
+# get race and affiliations. Raw because I'll change column order later
+rule get_author_with_pred_raw:
+    input: 
+        AUTHOR_WITH_GENDER, 
+        ROR_RAW_DATA
+    output: AUTHOR_WITH_PRED_RAW
+    shell: "python scripts/get_author_with_pred_raw.py {input} {output}"
 
-# # rearrange colomn order
-# rule get_author_with_pred:
-#     input: AUTHOR_WITH_PRED_RAW
-#     output: AUTHOR_WITH_PRED
-#     shell: "python scripts/get_author_with_pred.py {input} {output}"
+# rearrange colomn order
+rule get_author_with_pred:
+    input: AUTHOR_WITH_PRED_RAW
+    output: AUTHOR_WITH_PRED
+    shell: "python scripts/get_author_with_pred.py {input} {output}"
 
-# # add 'type' to paper df and author data
-# rule get_paper_and_author_with_type:
-#     input: 
-#         PAPER_CLASSIFICATION_HONGTAO,
-#         PAPER_CLASSIFICATION_JEFF,
-#         PAPER_CLASSIFICATION_KRISTEN,
-#         ICA_PAPER_DF,
-#         AUTHOR_WITH_PRED,
+# add 'type' to paper df and author data
+rule get_paper_and_author_with_type:
+    input: 
+        PAPER_CLASSIFICATION_HONGTAO,
+        PAPER_CLASSIFICATION_JEFF,
+        PAPER_CLASSIFICATION_KRISTEN,
+        ICA_PAPER_DF,
+        AUTHOR_WITH_PRED,
 
-#     output: ICA_PAPER_DF_WITH_TYPE, 
-#             AUTHOR_WITH_PRED_WITH_TYPE,
-#             RESEARCH_PAPER_DF,
-#             RESEARCH_AUTHOR_WITH_PRED,
-#             AUTHORS_TO_STUDY,
-#             DOIS_TO_STUDY,
-#             PAPERS_TO_STUDY
-#     shell: "python scripts/get_paper_and_author_with_type.py {input} {output}"
+    output: ICA_PAPER_DF_WITH_TYPE, 
+            AUTHOR_WITH_PRED_WITH_TYPE,
+            RESEARCH_PAPER_DF,
+            RESEARCH_AUTHOR_WITH_PRED,
+            AUTHORS_TO_STUDY,
+            DOIS_TO_STUDY,
+            PAPERS_TO_STUDY
+    shell: "python scripts/get_paper_and_author_with_type.py {input} {output}"
 
-# rule get_authorid_with_vars:
-#     input:
-#         ROR_RAW_DATA,
-#         HONGTAO_AFF_RESULT,
-#         KRISTEN_AFF_RESULT,
-#         HALEY_GR_RESULT,
-#         JAEMIN_GR_RESULT,
-#         JONGMIN_GR_RESULT,
-#         MATTHEW_GR_RESULT,
-#         JEFF_GR_RESULT,
-#         MICHELLE_GR_RESULT,
-#         INITIAL_DF,
+rule get_authorid_with_vars:
+    input:
+        ROR_RAW_DATA,
+        HONGTAO_AFF_RESULT,
+        KRISTEN_AFF_RESULT,
+        HALEY_GR_RESULT,
+        JAEMIN_GR_RESULT,
+        JONGMIN_GR_RESULT,
+        MATTHEW_GR_RESULT,
+        JEFF_GR_RESULT,
+        MICHELLE_GR_RESULT,
+        INITIAL_DF,
 
-#     output:
-#         AUTHORID_WITH_VARS
-#     shell: 'python scripts/get_authorid_with_vars.py {input} {output}'
+    output:
+        AUTHORID_WITH_VARS
+    shell: 'python scripts/get_authorid_with_vars.py {input} {output}'
 
 rule get_authors_and_papers_expanded:
     input:
@@ -190,12 +190,12 @@ rule get_authors_and_papers_expanded:
         PAPERS_TO_STUDY_EXPANDED,
     shell: 'python scripts/get_authors_and_papers_expanded.py {input} {output}'
 
-# rule get_gscholar_data:
-#     input: AUTHORS_TO_STUDY
-#     output: GSCHOLAR_DATA
-#     shell: 'python scripts/get_gscholar_data.py {input} {output}'
+rule get_gscholar_data:
+    input: AUTHORS_TO_STUDY
+    output: GSCHOLAR_DATA
+    shell: 'python scripts/get_gscholar_data.py {input} {output}'
 
-# rule get_gscholar_data_combined:
-#     input: GSCHOLAR_DATA, GSCHOLAR_DATA_MANUAL_CHECKED
-#     output: GSCHOLAR_DATA_COMBINED
-#     shell: 'python scripts/get_gscholar_data_combined.py {input} {output}'
+rule get_gscholar_data_combined:
+    input: GSCHOLAR_DATA, GSCHOLAR_DATA_MANUAL_CHECKED
+    output: GSCHOLAR_DATA_COMBINED
+    shell: 'python scripts/get_gscholar_data_combined.py {input} {output}'

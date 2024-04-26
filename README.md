@@ -26,3 +26,54 @@ This data contains information about each paper article.
 18. **cross_race_details**: Details about the race diversity among the authors.
 19. **cross_gender_details**: Details about the gender diversity among the authors.
 20. **gscholar_citation**: The number of citations the paper has according to Google Scholar.
+
+### authors_to_study_expanded.csv
+
+1. **authorIndex**: author index
+2. **year**: the year when the paper associated with this paper was published
+3. **journal**: the journal where the paper associated with this paper was published
+4. **authorPosition**: author position
+5. **countrypred**: which country was this author based when the paper was published
+6. **genderpred**: gender of this author
+7. **racepred**: race of this author
+8. **afftypepred**: the affiliation type of this author's affiliation when the paper was published.
+
+### author_chord_gr_from_firstauthors.csv 
+
+This is data for Figure 7. 
+
+### cntry_chord_from_firstauthor.csv
+
+This is data for Figure 6. 
+
+## Figures
+
+Those are the figures in our study. 
+
+## Replication
+
+To replicate our study, you'll need our scripts to crawl, process, and analyze data. 
+
+### Crawling and Processing data 
+
+We used snakemake to automate the crawling and processing. The folder of `workflow/scripts` contains the scripts and the file of `workflow/Snakefile` specifies the details. 
+
+**PLEASE NOTE THAT SINCE UNNECESSARY FILES AND DATA CONTAINING AUTHOR IDENTIFICATION INFO HAVE BEEN DELETED, THE SNAKEFILE IS NO LONGER EXECUTABLE. HOEWVER, YOU CAN STILL USE THE FOLLOWING SCRIPTS INDIVIDUALLY BY YOURSELF IF YOU DECIDE TO SCRAP THE PUBLIC ICA JOURNAL AND AUTHOR DATA.**
+
+- `scrape_ica_paper_dois.py`: obtain ICA publication paper info (dois, title, and abstracts) from the official websites of the five ICA journals we analyze. For example, [https://academic.oup.com/joc/issue](https://academic.oup.com/joc/issue).
+
+- `scrape_ica_author_data.py`: get paper and author data from each ICA journal publication
+
+- `get_author_with_gender.py`: get gender raw predictions. This is to prevent me from having to do it again, which requires quota from genderize.io.
+
+- `get_author_with_pred_raw.py`: get race and affiliations. "Raw" because I'll change column order later
+
+- `get_author_with_pred.py`: rearrange colomn order
+
+- `get_paper_and_author_with_type.py`: add 'type' to paper df and author data, and subsequently get research paper/author, and authors/papers to study. 
+
+- `get_authorid_with_vars.py`: process the gender, race and aff coded data and return basically dictionaries through a dataframe. 
+
+- `get_authors_and_papers_expanded.py`: get all variables needed in analysis.
+
+- `get_gscholar_data.py` and `get_gscholar_data_combined.py`: get gscholar data.
