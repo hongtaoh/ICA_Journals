@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+all                             1              1              1
+get_author_with_pred            1              1              1
+get_author_with_pred_raw        1              1              1
+get_research_paper_only         1              1              1
+total                           4              1              1
+
+Select jobs to execute...
+
+[Thu Aug 11 12:38:28 2022]
+rule get_author_with_pred_raw:
+    input: ../data/interim/author_with_gender.csv, ../data/raw/large/ror.json
+    output: ../data/interim/author_with_pred_raw.csv
+    jobid: 4
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Thu Aug 11 12:39:25 2022]
+Error in rule get_author_with_pred_raw:
+    jobid: 4
+    output: ../data/interim/author_with_pred_raw.csv
+    shell:
+        python scripts/get_author_with_pred_raw.py ../data/interim/author_with_gender.csv ../data/raw/large/ror.json ../data/interim/author_with_pred_raw.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-08-11T123827.536546.snakemake.log

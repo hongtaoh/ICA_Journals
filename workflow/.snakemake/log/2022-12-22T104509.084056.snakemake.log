@@ -1,0 +1,22 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+all                             1              1              1
+get_author_with_pred_raw        1              1              1
+total                           2              1              1
+
+Select jobs to execute...
+
+[Thu Dec 22 10:45:09 2022]
+rule get_author_with_pred_raw:
+    input: ../data/interim/author_with_gender.csv, ../data/raw/large/ror.json
+    output: ../data/interim/author_with_pred_raw.csv
+    jobid: 1
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+Terminating processes on user request, this might take some time.
+Cancelling snakemake on user request.

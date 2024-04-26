@@ -1,0 +1,13 @@
+source,target,value
+White,Asian,323
+White,Hispanic,115
+White,Black,49
+Hispanic,Asian,46
+White,Middle Eastern,38
+Black,Asian,20
+Middle Eastern,Asian,15
+Hispanic,Black,9
+White,Indigenous,6
+Middle Eastern,Black,4
+Indigenous,Black,1
+Middle Eastern,Hispanic,1

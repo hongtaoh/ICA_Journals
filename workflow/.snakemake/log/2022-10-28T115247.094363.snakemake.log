@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                count    min threads    max threads
+-------------------------------  -------  -------------  -------------
+all                                    1              1              1
+get_authorid_with_vars                 1              1              1
+get_authors_and_papers_expanded        1              1              1
+total                                  3              1              1
+
+Select jobs to execute...
+
+[Fri Oct 28 11:52:47 2022]
+rule get_authorid_with_vars:
+    input: ../data/raw/large/ror.json, ../data/interim/aff_result/hongtao.csv, ../data/interim/aff_result/kristen.csv, ../data/interim/gender_race_result/haley.csv, ../data/interim/gender_race_result/JAEMIN.csv, ../data/interim/gender_race_result/jongmin.csv, ../data/interim/gender_race_result/matthew.csv, ../data/interim/gender_race_result/jeff.csv, ../data/interim/gender_race_result/michelle.csv
+    output: ../data/processed/authorid_with_variables.csv
+    jobid: 7
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Fri Oct 28 11:53:02 2022]
+Error in rule get_authorid_with_vars:
+    jobid: 7
+    output: ../data/processed/authorid_with_variables.csv
+    shell:
+        python scripts/get_authorid_with_vars.py ../data/raw/large/ror.json ../data/interim/aff_result/hongtao.csv ../data/interim/aff_result/kristen.csv ../data/interim/gender_race_result/haley.csv ../data/interim/gender_race_result/JAEMIN.csv ../data/interim/gender_race_result/jongmin.csv ../data/interim/gender_race_result/matthew.csv ../data/interim/gender_race_result/jeff.csv ../data/interim/gender_race_result/michelle.csv ../data/processed/authorid_with_variables.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-10-28T115247.094363.snakemake.log

@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count    min threads    max threads
+----------------------  -------  -------------  -------------
+all                           1              1              1
+scrape_ica_author_data        1              1              1
+total                         2              1              1
+
+Select jobs to execute...
+
+[Fri Jul 22 14:25:24 2022]
+rule scrape_ica_author_data:
+    input: ../data/interim/ica_paper_df.csv
+    output: ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    jobid: 2
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Fri Jul 22 23:27:12 2022]
+Error in rule scrape_ica_author_data:
+    jobid: 2
+    output: ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    shell:
+        python scripts/scrape_ica_author_data.py ../data/interim/ica_paper_df.csv ../data/interim/ica_paper_data.csv ../data/interim/ica_author_data.csv ../data/interim/ica_error_urls.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-07-22T142524.706583.snakemake.log

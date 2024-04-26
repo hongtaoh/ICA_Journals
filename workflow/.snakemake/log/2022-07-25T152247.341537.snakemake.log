@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in line 63 of /Users/hongtaoh/Desktop/github/ica-authors/workflow/Snakefile:
+Missing input files for rule get_gender_race_aff_pred:
+    output: ../data/interim/author_with_pred.csv
+    affected files:
+        ror.json

@@ -1,0 +1,37 @@
+Building DAG of jobs...
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+all                             1              1              1
+get_gender_race_aff_pred        1              1              1
+total                           2              1              1
+
+Select jobs to execute...
+
+[Sat Jul 23 16:50:51 2022]
+rule get_gender_race_aff_pred:
+    input: ../data/interim/ica_author_df.csv
+    output: ../data/interim/author_with_pred.csv
+    jobid: 3
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Sat Jul 23 16:51:13 2022]
+Error in rule get_gender_race_aff_pred:
+    jobid: 3
+    output: ../data/interim/author_with_pred.csv
+    shell:
+        python scripts/get_gender_race_aff_pred.py ../data/interim/ica_author_df.csv ../data/interim/author_with_pred.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+The code used to generate one or several output files has changed:
+    To inspect which output files have changes, run 'snakemake --list-code-changes'.
+    To trigger a re-run, use 'snakemake -R $(snakemake --list-code-changes)'.
+Complete log: .snakemake/log/2022-07-23T165050.327167.snakemake.log

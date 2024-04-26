@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                               count    min threads    max threads
+------------------------------  -------  -------------  -------------
+all                                   1              1              1
+get_author_with_pred                  1              1              1
+get_paper_and_author_with_type        1              1              1
+total                                 3              1              1
+
+Select jobs to execute...
+
+[Fri Sep 23 19:21:41 2022]
+rule get_author_with_pred:
+    input: ../data/interim/author_with_pred_raw.csv
+    output: ../data/processed/author_with_pred.csv
+    jobid: 5
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Fri Sep 23 19:21:47 2022]
+Finished job 5.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Fri Sep 23 19:21:47 2022]
+rule get_paper_and_author_with_type:
+    input: ../data/interim/paper_classification_task/paper_classification_hongtao.csv, ../data/interim/paper_classification_task/paper_classification_jeff.csv, ../data/interim/paper_classification_task/paper_classification_kristen.csv, ../data/interim/ica_paper_df.csv, ../data/processed/author_with_pred.csv
+    output: ../data/processed/ica_paper_df_with_type.csv, ../data/processed/author_with_pred_with_type.csv, ../data/processed/research_paper_df.csv, ../data/processed/research_author_with_pred.csv, ../data/processed/authors_to_study.csv, ../data/processed/dois_to_study.txt, ../data/processed/papers_to_study.csv
+    jobid: 6
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Fri Sep 23 19:21:52 2022]
+Finished job 6.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Fri Sep 23 19:21:52 2022]
+localrule all:
+    input: ../data/interim/ica_paper_df.csv, ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt, ../data/interim/author_with_gender.csv, ../data/interim/author_with_pred_raw.csv, ../data/processed/author_with_pred.csv, ../data/processed/ica_paper_df_with_type.csv, ../data/processed/author_with_pred_with_type.csv, ../data/processed/research_paper_df.csv, ../data/processed/research_author_with_pred.csv, ../data/processed/authors_to_study.csv, ../data/processed/dois_to_study.txt, ../data/processed/papers_to_study.csv
+    jobid: 0
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Fri Sep 23 19:21:52 2022]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2022-09-23T192140.662287.snakemake.log

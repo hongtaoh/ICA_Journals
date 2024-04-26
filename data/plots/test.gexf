@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-10-22">
+    <creator>NetworkX 2.7.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <nodes>
+      <node id="US" label="US" />
+      <node id="NL" label="NL" />
+      <node id="DE" label="DE" />
+      <node id="PH" label="PH" />
+      <node id="SG" label="SG" />
+      <node id="CN" label="CN" />
+      <node id="GB" label="GB" />
+      <node id="CA" label="CA" />
+      <node id="GE" label="GE" />
+      <node id="AT" label="AT" />
+      <node id="JP" label="JP" />
+      <node id="KR" label="KR" />
+      <node id="IL" label="IL" />
+      <node id="NZ" label="NZ" />
+      <node id="ES" label="ES" />
+      <node id="AU" label="AU" />
+      <node id="DK" label="DK" />
+      <node id="CH" label="CH" />
+      <node id="CL" label="CL" />
+      <node id="BE" label="BE" />
+      <node id="LB" label="LB" />
+      <node id="MX" label="MX" />
+      <node id="NO" label="NO" />
+      <node id="FR" label="FR" />
+      <node id="IT" label="IT" />
+      <node id="FI" label="FI" />
+      <node id="LV" label="LV" />
+      <node id="SE" label="SE" />
+      <node id="IS" label="IS" />
+      <node id="IN" label="IN" />
+      <node id="PL" label="PL" />
+      <node id="PT" label="PT" />
+      <node id="TR" label="TR" />
+      <node id="CO" label="CO" />
+      <node id="TH" label="TH" />
+      <node id="ET" label="ET" />
+      <node id="GR" label="GR" />
+      <node id="UG" label="UG" />
+      <node id="ZA" label="ZA" />
+      <node id="TW" label="TW" />
+      <node id="AR" label="AR" />
+      <node id="TK" label="TK" />
+      <node id="CY" label="CY" />
+      <node id="KE" label="KE" />
+    </nodes>
+    <edges>
+      <edge source="US" target="NL" id="0" />
+      <edge source="US" target="PH" id="1" />
+      <edge source="US" target="DE" id="2" />
+      <edge source="US" target="CN" id="3" />
+      <edge source="US" target="GB" id="4" />
+      <edge source="US" target="CA" id="5" />
+      <edge source="US" target="SG" id="6" />
+      <edge source="US" target="JP" id="7" />
+      <edge source="US" target="KR" id="8" />
+      <edge source="US" target="IL" id="9" />
+      <edge source="US" target="NZ" id="10" />
+      <edge source="US" target="GE" id="11" />
+      <edge source="US" target="AU" id="12" />
+      <edge source="US" target="CL" id="13" />
+      <edge source="US" target="LB" id="14" />
+      <edge source="US" target="MX" id="15" />
+      <edge source="US" target="CH" id="16" />
+      <edge source="US" target="NO" id="17" />
+      <edge source="US" target="FI" id="18" />
+      <edge source="US" target="LV" id="19" />
+      <edge source="US" target="SE" id="20" />
+      <edge source="US" target="FR" id="21" />
+      <edge source="US" target="IT" id="22" />
+      <edge source="US" target="DK" id="23" />
+      <edge source="US" target="PL" id="24" />
+      <edge source="US" target="PT" id="25" />
+      <edge source="US" target="ES" id="26" />
+      <edge source="US" target="ET" id="27" />
+      <edge source="US" target="GR" id="28" />
+      <edge source="US" target="AT" id="29" />
+      <edge source="US" target="UG" id="30" />
+      <edge source="US" target="TW" id="31" />
+      <edge source="US" target="CO" id="32" />
+      <edge source="US" target="BE" id="33" />
+      <edge source="US" target="KE" id="34" />
+      <edge source="NL" target="US" id="35" />
+      <edge source="NL" target="DE" id="36" />
+      <edge source="NL" target="AT" id="37" />
+      <edge source="NL" target="BE" id="38" />
+      <edge source="NL" target="SE" id="39" />
+      <edge source="NL" target="GB" id="40" />
+      <edge source="NL" target="CH" id="41" />
+      <edge source="NL" target="SG" id="42" />
+      <edge source="NL" target="IL" id="43" />
+      <edge source="NL" target="CN" id="44" />
+      <edge source="DE" target="US" id="45" />
+      <edge source="DE" target="NL" id="46" />
+      <edge source="DE" target="BE" id="47" />
+      <edge source="DE" target="GB" id="48" />
+      <edge source="DE" target="CH" id="49" />
+      <edge source="DE" target="NO" id="50" />
+      <edge source="DE" target="ES" id="51" />
+      <edge source="DE" target="FI" id="52" />
+      <edge source="DE" target="ZA" id="53" />
+      <edge source="DE" target="SE" id="54" />
+      <edge source="DE" target="AT" id="55" />
+      <edge source="DE" target="CA" id="56" />
+      <edge source="DE" target="IL" id="57" />
+      <edge source="DE" target="SG" id="58" />
+      <edge source="DE" target="PH" id="59" />
+      <edge source="DE" target="CN" id="60" />
+      <edge source="PH" target="US" id="61" />
+      <edge source="PH" target="NL" id="62" />
+      <edge source="PH" target="IL" id="63" />
+      <edge source="PH" target="AR" id="64" />
+      <edge source="PH" target="CH" id="65" />
+      <edge source="PH" target="ZA" id="66" />
+      <edge source="PH" target="SG" id="67" />
+      <edge source="SG" target="US" id="68" />
+      <edge source="SG" target="AU" id="69" />
+      <edge source="SG" target="CN" id="70" />
+      <edge source="SG" target="AT" id="71" />
+      <edge source="CN" target="US" id="72" />
+      <edge source="CN" target="SG" id="73" />
+      <edge source="CN" target="AU" id="74" />
+      <edge source="CN" target="KR" id="75" />
+      <edge source="CN" target="DK" id="76" />
+      <edge source="GB" target="US" id="77" />
+      <edge source="GB" target="NL" id="78" />
+      <edge source="GB" target="ES" id="79" />
+      <edge source="GB" target="SG" id="80" />
+      <edge source="GB" target="IS" id="81" />
+      <edge source="GB" target="NO" id="82" />
+      <edge source="GB" target="PH" id="83" />
+      <edge source="GB" target="IT" id="84" />
+      <edge source="GB" target="IL" id="85" />
+      <edge source="GB" target="CH" id="86" />
+      <edge source="GB" target="DK" id="87" />
+      <edge source="GB" target="AU" id="88" />
+      <edge source="CA" target="US" id="89" />
+      <edge source="CA" target="ES" id="90" />
+      <edge source="CA" target="DK" id="91" />
+      <edge source="CA" target="IT" id="92" />
+      <edge source="CA" target="GB" id="93" />
+      <edge source="CA" target="IL" id="94" />
+      <edge source="GE" target="US" id="95" />
+      <edge source="AT" target="US" id="96" />
+      <edge source="AT" target="NZ" id="97" />
+      <edge source="AT" target="CH" id="98" />
+      <edge source="AT" target="CO" id="99" />
+      <edge source="AT" target="ES" id="100" />
+      <edge source="AT" target="NL" id="101" />
+      <edge source="AT" target="DE" id="102" />
+      <edge source="AT" target="CL" id="103" />
+      <edge source="JP" target="US" id="104" />
+      <edge source="JP" target="KR" id="105" />
+      <edge source="JP" target="CA" id="106" />
+      <edge source="KR" target="US" id="107" />
+      <edge source="KR" target="SG" id="108" />
+      <edge source="IL" target="US" id="109" />
+      <edge source="IL" target="NL" id="110" />
+      <edge source="IL" target="DE" id="111" />
+      <edge source="IL" target="GB" id="112" />
+      <edge source="NZ" target="US" id="113" />
+      <edge source="ES" target="US" id="114" />
+      <edge source="ES" target="GB" id="115" />
+      <edge source="ES" target="AU" id="116" />
+      <edge source="ES" target="CO" id="117" />
+      <edge source="AU" target="NL" id="118" />
+      <edge source="AU" target="CN" id="119" />
+      <edge source="AU" target="US" id="120" />
+      <edge source="DK" target="US" id="121" />
+      <edge source="DK" target="NL" id="122" />
+      <edge source="CH" target="DE" id="123" />
+      <edge source="CH" target="GB" id="124" />
+      <edge source="CH" target="US" id="125" />
+      <edge source="CL" target="US" id="126" />
+      <edge source="CL" target="MX" id="127" />
+      <edge source="CL" target="DE" id="128" />
+      <edge source="CL" target="CN" id="129" />
+      <edge source="CL" target="ES" id="130" />
+      <edge source="CL" target="PL" id="131" />
+      <edge source="CL" target="FI" id="132" />
+      <edge source="CL" target="NL" id="133" />
+      <edge source="CL" target="GB" id="134" />
+      <edge source="CL" target="SG" id="135" />
+      <edge source="BE" target="NL" id="136" />
+      <edge source="BE" target="US" id="137" />
+      <edge source="BE" target="CH" id="138" />
+      <edge source="BE" target="GB" id="139" />
+      <edge source="BE" target="CY" id="140" />
+      <edge source="LB" target="GB" id="141" />
+      <edge source="LB" target="CY" id="142" />
+      <edge source="MX" target="GB" id="143" />
+      <edge source="NO" target="DK" id="144" />
+      <edge source="NO" target="CH" id="145" />
+      <edge source="NO" target="FI" id="146" />
+      <edge source="NO" target="GB" id="147" />
+      <edge source="FR" target="CA" id="148" />
+      <edge source="FR" target="CH" id="149" />
+      <edge source="IT" target="GB" id="150" />
+      <edge source="IT" target="US" id="151" />
+      <edge source="IT" target="MX" id="152" />
+      <edge source="SE" target="US" id="153" />
+      <edge source="SE" target="AR" id="154" />
+      <edge source="SE" target="AT" id="155" />
+      <edge source="SE" target="DK" id="156" />
+      <edge source="SE" target="TH" id="157" />
+      <edge source="IN" target="US" id="158" />
+      <edge source="PT" target="ES" id="159" />
+      <edge source="TR" target="US" id="160" />
+      <edge source="TH" target="US" id="161" />
+      <edge source="GR" target="DE" id="162" />
+      <edge source="GR" target="GB" id="163" />
+      <edge source="TW" target="CN" id="164" />
+      <edge source="TW" target="KR" id="165" />
+      <edge source="AR" target="US" id="166" />
+      <edge source="TK" target="DE" id="167" />
+    </edges>
+  </graph>
+</gexf>

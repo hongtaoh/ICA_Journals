@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in line 164 of /Users/hongtaoh/Desktop/ica_authors/workflow/Snakefile:
+Missing input files for rule get_authorid_with_vars:
+    output: ../data/processed/authorid_with_variables.csv
+    affected files:
+        ../data/raw/large/ror.json

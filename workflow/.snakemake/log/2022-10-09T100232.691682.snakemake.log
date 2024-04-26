@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                count    min threads    max threads
+-------------------------------  -------  -------------  -------------
+all                                    1              1              1
+get_authors_and_papers_expanded        1              1              1
+total                                  2              1              1
+
+Select jobs to execute...
+
+[Sun Oct  9 10:02:33 2022]
+rule get_authors_and_papers_expanded:
+    input: ../data/processed/authorid_with_variables.csv, ../data/processed/authors_to_study.csv, ../data/processed/papers_to_study.csv
+    output: ../data/processed/authors_to_study_expanded.csv, ../data/processed/papers_to_study_expanded.csv
+    jobid: 8
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Sun Oct  9 10:02:36 2022]
+Error in rule get_authors_and_papers_expanded:
+    jobid: 8
+    output: ../data/processed/authors_to_study_expanded.csv, ../data/processed/papers_to_study_expanded.csv
+    shell:
+        python scripts/get_authors_and_papers_expanded.py ../data/processed/authorid_with_variables.csv ../data/processed/authors_to_study.csv ../data/processed/papers_to_study.csv../data/processed/authors_to_study_expanded.csv ../data/processed/papers_to_study_expanded.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-10-09T100232.691682.snakemake.log

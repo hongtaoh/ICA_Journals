@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                               count    min threads    max threads
+------------------------------  -------  -------------  -------------
+all                                   1              1              1
+get_paper_and_author_with_type        1              1              1
+total                                 2              1              1
+
+Select jobs to execute...
+
+[Tue Sep 20 15:10:47 2022]
+rule get_paper_and_author_with_type:
+    input: ../data/interim/paper_classification_task/paper_classification_hongtao.csv, ../data/interim/paper_classification_task/paper_classification_jeff.csv, ../data/interim/paper_classification_task/paper_classification_kristen.csv, ../data/interim/ica_paper_df.csv, ../data/processed/author_with_pred.csv
+    output: ../data/processed/ica_paper_df_with_type.csv, ../data/processed/author_with_pred_with_type.csv, ../data/processed/research_paper_df.csv, ../data/processed/research_author_with_pred.csv, ../data/processed/authors_to_study.csv, ../data/processed/dois_to_study.txt, ../data/processed/papers_to_study.csv
+    jobid: 6
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 114 of /Users/hongtaoh/Desktop/github/ica-authors/workflow/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+../data/processed/papers_to_study.csv completed successfully, but some output files are missing. 6
+Removing output files of failed job get_paper_and_author_with_type since they might be corrupted:
+../data/processed/ica_paper_df_with_type.csv, ../data/processed/author_with_pred_with_type.csv, ../data/processed/research_paper_df.csv, ../data/processed/research_author_with_pred.csv, ../data/processed/authors_to_study.csv, ../data/processed/dois_to_study.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-09-20T151047.187622.snakemake.log

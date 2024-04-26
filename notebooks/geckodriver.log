@@ -1,0 +1,111 @@
+1669313131676	geckodriver	INFO	Listening on 127.0.0.1:53699
+1669313132693	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofilevxLHcp"
+1669313134140	Marionette	INFO	Marionette enabled
+1669313134330	Marionette	INFO	Listening on port 53710
+Read port: 53710
+1669313134472	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofilevxLHcp/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1669313417084	Marionette	INFO	Stopped listening on port 53710
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669313418604	geckodriver	INFO	Listening on 127.0.0.1:53759
+1669313419618	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofilen3xSMU"
+1669313420106	Marionette	INFO	Marionette enabled
+1669313420250	Marionette	INFO	Listening on port 53770
+Read port: 53770
+1669313420329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofilen3xSMU/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1669313976027	Marionette	INFO	Stopped listening on port 53770
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669316748329	geckodriver	INFO	Listening on 127.0.0.1:55008
+1669316749348	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileVeyQbh"
+1669316749913	Marionette	INFO	Marionette enabled
+1669316750059	Marionette	INFO	Listening on port 55019
+Read port: 55019
+1669316750150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileVeyQbh/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1669316837755	Marionette	INFO	Stopped listening on port 55019
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669316842066	geckodriver	INFO	Listening on 127.0.0.1:55081
+1669316843064	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofile47nXnK"
+1669316843558	Marionette	INFO	Marionette enabled
+1669316843590	Marionette	INFO	Listening on port 55092
+Read port: 55092
+1669316843829	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofile47nXnK/search.json.mozlz4", (void 0)))
+1669316879306	Marionette	INFO	Stopped listening on port 55092
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669316883784	geckodriver	INFO	Listening on 127.0.0.1:55139
+1669316884792	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofile644dG2"
+1669316885296	Marionette	INFO	Marionette enabled
+1669316885325	Marionette	INFO	Listening on port 55151
+Read port: 55151
+1669316885529	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofile644dG2/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1669316919608	Marionette	INFO	Stopped listening on port 55151
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669316922981	geckodriver	INFO	Listening on 127.0.0.1:55203
+1669316923987	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileeh5lia"
+1669316924452	Marionette	INFO	Marionette enabled
+1669316924484	Marionette	INFO	Listening on port 55215
+Read port: 55215
+1669316924635	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileeh5lia/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1669317194003	Marionette	INFO	Stopped listening on port 55215
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1669327464433	geckodriver	INFO	Listening on 127.0.0.1:57978
+1669327465458	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileVWYEms"
+1669327465911	Marionette	INFO	Marionette enabled
+1669327466065	Marionette	INFO	Listening on port 57989
+Read port: 57989
+1669327466142	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T/rust_mozprofileVWYEms/search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1670519589931	geckodriver	INFO	Listening on 127.0.0.1:53765
+1670519590476	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53766" "-foreground" "-no-remote" "-profile" "/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T/rust_mozprofilepUBEIg"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1670519592443	Marionette	INFO	Marionette enabled
+1670519592532	Marionette	INFO	Listening on port 53771
+WebDriver BiDi listening on ws://127.0.0.1:53766
+1670519593084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T/rust_mozprofilepUBEIg/search.json.mozlz4", (void 0)))
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+DevTools listening on ws://127.0.0.1:53766/devtools/browser/37ee5919-f2b6-4054-ac43-546fffe09e18
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1670520765236	geckodriver	INFO	Listening on 127.0.0.1:53925
+1670520765816	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53926" "-foreground" "-no-remote" "-profile" "/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T/rust_mozprofileBIiiPj"
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+1670520768153	Marionette	INFO	Marionette enabled
+1670520768236	Marionette	INFO	Listening on port 53931
+WebDriver BiDi listening on ws://127.0.0.1:53926
+1670520768715	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T/rust_mozprofileBIiiPj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53926/devtools/browser/6a6b45ed-9d63-4404-93d1-fcc50a5c6f7b
+_RegisterApplication(), FAILED TO establish the default connection to the WindowServer, _CGSDefaultConnection() is NULL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://scholar.google.com."
+1670521173618	Marionette	INFO	Stopped listening on port 53771
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1670521175108	Marionette	INFO	Stopped listening on port 53931
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

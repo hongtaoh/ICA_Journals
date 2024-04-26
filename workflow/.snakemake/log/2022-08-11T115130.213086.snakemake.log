@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                        count    min threads    max threads
+-----------------------  -------  -------------  -------------
+all                            1              1              1
+get_research_paper_only        1              1              1
+total                          2              1              1
+
+Select jobs to execute...
+
+[Thu Aug 11 11:51:30 2022]
+rule get_research_paper_only:
+    input: ../data/raw/category-classification.csv, ../data/raw/to_delete_dois.txt, ../data/interim/ica_paper_df.csv, ../data/processed/author_with_pred.csv
+    output: ../data/processed/ica_paper_df_with_type.csv, ../data/processed/research_author_with_pred.csv
+    jobid: 6
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Thu Aug 11 11:51:35 2022]
+Finished job 6.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Aug 11 11:51:35 2022]
+localrule all:
+    input: ../data/interim/ica_paper_df.csv, ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt, ../data/interim/author_with_gender.csv, ../data/interim/author_with_pred_raw.csv, ../data/processed/author_with_pred.csv, ../data/processed/ica_paper_df_with_type.csv, ../data/processed/research_author_with_pred.csv
+    jobid: 0
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Thu Aug 11 11:51:35 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2022-08-11T115130.213086.snakemake.log

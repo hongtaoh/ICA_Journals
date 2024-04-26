@@ -1,0 +1,61 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+all                             1              1              1
+get_author_with_gender          1              1              1
+get_author_with_pred            1              1              1
+get_author_with_pred_raw        1              1              1
+total                           4              1              1
+
+Select jobs to execute...
+
+[Tue Jul 26 11:45:55 2022]
+rule get_author_with_gender:
+    input: ../data/interim/ica_author_data.csv
+    output: ../data/interim/author_with_gender.csv
+    jobid: 3
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Tue Jul 26 11:46:18 2022]
+Finished job 3.
+1 of 4 steps (25%) done
+Select jobs to execute...
+
+[Tue Jul 26 11:46:18 2022]
+rule get_author_with_pred_raw:
+    input: ../data/interim/author_with_gender.csv, ../data/raw/large/ror.json
+    output: ../data/interim/author_with_pred_raw.csv
+    jobid: 4
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Tue Jul 26 12:18:03 2022]
+Finished job 4.
+2 of 4 steps (50%) done
+Select jobs to execute...
+
+[Tue Jul 26 12:18:03 2022]
+rule get_author_with_pred:
+    input: ../data/interim/author_with_pred_raw.csv
+    output: ../data/processed/author_with_pred.csv
+    jobid: 5
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Tue Jul 26 12:18:07 2022]
+Finished job 5.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Tue Jul 26 12:18:07 2022]
+localrule all:
+    input: ../data/interim/ica_paper_df.csv, ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt, ../data/interim/author_with_gender.csv, ../data/interim/author_with_pred_raw.csv, ../data/processed/author_with_pred.csv
+    jobid: 0
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Tue Jul 26 12:18:07 2022]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2022-07-26T114555.212542.snakemake.log

@@ -1,0 +1,47 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count    min threads    max threads
+----------------------  -------  -------------  -------------
+all                           1              1              1
+scrape_ica_author_data        1              1              1
+scrape_ica_paper_dois         1              1              1
+total                         3              1              1
+
+Select jobs to execute...
+
+[Sun Jul 17 12:37:55 2022]
+rule scrape_ica_paper_dois:
+    output: ../data/interim/ica_paper_df.csv
+    jobid: 1
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Sun Jul 17 12:38:35 2022]
+Finished job 1.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Sun Jul 17 12:38:35 2022]
+rule scrape_ica_author_data:
+    input: ../data/interim/ica_paper_df.csv
+    output: ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    jobid: 2
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Sun Jul 17 12:39:14 2022]
+Finished job 2.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Sun Jul 17 12:39:14 2022]
+localrule all:
+    input: ../data/interim/ica_paper_df.csv, ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    jobid: 0
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Sun Jul 17 12:39:14 2022]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2022-07-17T123755.356392.snakemake.log

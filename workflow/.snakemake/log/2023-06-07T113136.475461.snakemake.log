@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count    min threads    max threads
+--------------------------  -------  -------------  -------------
+all                               1              1              1
+get_gscholar_data_combined        1              1              1
+total                             2              1              1
+
+Select jobs to execute...
+
+[Wed Jun  7 11:31:37 2023]
+rule get_gscholar_data_combined:
+    input: ../data/processed/gscholar_data.csv, ../data/interim/gscholar_data_manual_checked.csv
+    output: ../data/processed/gscholar_data_combined.csv
+    jobid: 1
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Wed Jun  7 11:31:40 2023]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Wed Jun  7 11:31:40 2023]
+localrule all:
+    input: ../data/processed/gscholar_data_combined.csv
+    jobid: 0
+    resources: tmpdir=/var/folders/z2/5kr96fyn63z_tj_bwr33t5dw0000gn/T
+
+[Wed Jun  7 11:31:40 2023]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2023-06-07T113136.475461.snakemake.log

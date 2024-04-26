@@ -1,0 +1,10 @@
+pandas
+numpy
+requests
+altair
+selenium
+beautifulsoup4
+snakemake
+jupyter
+seaborn
+matplotlib

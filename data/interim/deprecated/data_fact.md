@@ -1,0 +1,22 @@
+- doi: DOI
+- url: paper URL
+- title: paper title
+- journal: journal
+- authorName: author full name
+- gscholarLink: the link to searching that author's name on Google Scholar
+- firstName: author first name
+- gender: the gender result produced by genderize.io
+- gender_prob: the probability that this guess is correct, genderize.io
+- gender_basedon: how many samples are based on to have this result, genderize.io
+- genderAgree: whether this gender prediction is the same as that produced by gender api (in the following columns)
+- gender_api: the gender prediction by gender api
+- gender_accu: the probability that this guess is correct, gender api
+- gender_samples: how many samples are based on to have this result, genderize.io
+- lastName: author last name
+- race: race prediction based on US census 2010
+- affiliation: author affiliation as shown on journal website
+- ror_id: ror id for the predicted affiliation name
+- ror_affname: predicted affiliation name
+- ror_afftype: affiliation type
+- us_state: the us state where this affiliation is located
+- ror_country: the country where this affiliation is located

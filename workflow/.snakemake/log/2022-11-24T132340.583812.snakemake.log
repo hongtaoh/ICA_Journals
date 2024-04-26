@@ -1,0 +1,37 @@
+Migrating .snakemake folder to new format...
+Migration complete
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                                count    min threads    max threads
+-------------------------------  -------  -------------  -------------
+all                                    1              1              1
+get_author_with_gender                 1              1              1
+get_authors_and_papers_expanded        1              1              1
+get_gscholar_data                      1              1              1
+scrape_ica_author_data                 1              1              1
+total                                  5              1              1
+
+Select jobs to execute...
+
+[Thu Nov 24 13:23:40 2022]
+rule scrape_ica_author_data:
+    input: ../data/interim/ica_paper_df.csv
+    output: ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    jobid: 2
+    reason: Updated input files: ../data/interim/ica_paper_df.csv
+    resources: tmpdir=/var/folders/jh/8bnrrjds16sbkbtxfzdx393w0000gn/T
+
+Terminating processes on user request, this might take some time.
+[Thu Nov 24 13:23:50 2022]
+Error in rule scrape_ica_author_data:
+    jobid: 2
+    input: ../data/interim/ica_paper_df.csv
+    output: ../data/interim/ica_paper_data.csv, ../data/interim/ica_author_data.csv, ../data/interim/ica_error_urls.txt
+    shell:
+        python scripts/scrape_ica_author_data.py ../data/interim/ica_paper_df.csv ../data/interim/ica_paper_data.csv ../data/interim/ica_author_data.csv ../data/interim/ica_error_urls.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2022-11-24T132340.583812.snakemake.log
