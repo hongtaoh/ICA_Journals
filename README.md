@@ -77,3 +77,8 @@ We used snakemake to automate the crawling and processing. The folder of `workfl
 - `get_authors_and_papers_expanded.py`: get all variables needed in analysis.
 
 - `get_gscholar_data.py` and `get_gscholar_data_combined.py`: get gscholar data.
+
+### Analyzing data
+
+All replicable and executable notebooks for our data analysis are available at the folder of `Analaysis_and_Plotting`. 
+

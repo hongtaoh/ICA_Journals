@@ -1,0 +1,158 @@
+countrypred,racepred,freq,country_full_name
+AE,MENA,1,United Arab Emirates
+AE,White,2,United Arab Emirates
+AM,White,1,Armenia
+AR,HLS,2,Argentina
+AR,White,3,Argentina
+AT,Asian,2,Austria
+AT,HLS,6,Austria
+AT,White,35,Austria
+AU,Asian,19,Australia
+AU,HLS,1,Australia
+AU,MENA,1,Australia
+AU,White,104,Australia
+BD,White,1,Bangladesh
+BE,White,66,Belgium
+BN,White,1,Brunei Darussalam
+BR,Asian,1,Brazil
+BR,HLS,20,Brazil
+BR,White,6,Brazil
+BS,White,1,Bahamas
+BY,White,1,Belarus
+CA,Asian,17,Canada
+CA,HLS,3,Canada
+CA,MENA,5,Canada
+CA,White,195,Canada
+CH,Black,1,Switzerland
+CH,HLS,3,Switzerland
+CH,White,59,Switzerland
+CL,HLS,24,Chile
+CL,White,3,Chile
+CN,Asian,76,China
+CN,White,27,China
+CO,HLS,3,Colombia
+CO,White,5,Colombia
+CR,Asian,2,Costa Rica
+CR,HLS,3,Costa Rica
+CR,White,1,Costa Rica
+CY,White,4,Cyprus
+CZ,White,10,Czech Republic
+DE,Asian,5,Germany
+DE,Black,1,Germany
+DE,MENA,1,Germany
+DE,White,269,Germany
+DK,Asian,1,Denmark
+DK,HLS,2,Denmark
+DK,White,36,Denmark
+EE,White,5,Estonia
+EG,Asian,1,Egypt
+EG,MENA,3,Egypt
+EG,White,1,Egypt
+ES,Asian,3,Spain
+ES,HLS,37,Spain
+ES,White,17,Spain
+ET,Black,1,Ethiopia
+FI,White,44,Finland
+FR,Asian,1,France
+FR,HLS,1,France
+FR,MENA,3,France
+FR,White,27,France
+GB,Asian,19,United Kingdom
+GB,Black,4,United Kingdom
+GB,HLS,8,United Kingdom
+GB,MENA,3,United Kingdom
+GB,White,263,United Kingdom
+GE,White,1,Georgia
+GH,White,2,Ghana
+GR,White,6,Greece
+HK,Asian,6,Hong Kong
+HK,White,2,Hong Kong
+HR,Asian,1,Croatia
+HU,White,7,Hungary
+ID,HLS,1,Indonesia
+IE,White,11,Ireland
+IL,Asian,8,Israel
+IL,HLS,4,Israel
+IL,MENA,26,Israel
+IL,White,189,Israel
+IN,Asian,7,India
+IN,White,6,India
+IR,MENA,1,"Iran, Islamic Republic of"
+IR,White,1,"Iran, Islamic Republic of"
+IS,White,3,Iceland
+IT,Asian,1,Italy
+IT,HLS,1,Italy
+IT,White,34,Italy
+JP,Asian,42,Japan
+JP,HLS,1,Japan
+JP,White,18,Japan
+KE,White,2,Kenya
+KH,White,1,Cambodia
+KR,Asian,79,"Korea, Republic of"
+KR,HLS,1,"Korea, Republic of"
+KR,White,3,"Korea, Republic of"
+LB,Asian,5,Lebanon
+LB,White,10,Lebanon
+LK,Asian,1,Sri Lanka
+LT,White,1,Lithuania
+LV,Asian,1,Latvia
+LV,White,1,Latvia
+MA,White,1,Morocco
+MO,Asian,1,Macao
+MX,HLS,11,Mexico
+MX,White,1,Mexico
+MZ,White,1,Mozambique
+NG,White,2,Nigeria
+NL,Asian,5,Netherlands
+NL,HLS,1,Netherlands
+NL,Indigenous,1,Netherlands
+NL,MENA,2,Netherlands
+NL,White,355,Netherlands
+NO,White,26,Norway
+NZ,Asian,11,New Zealand
+NZ,Black,1,New Zealand
+NZ,White,18,New Zealand
+PE,HLS,1,Peru
+PH,Asian,16,Philippines
+PH,Black,2,Philippines
+PH,HLS,4,Philippines
+PH,MENA,2,Philippines
+PH,White,111,Philippines
+PL,White,11,Poland
+PT,HLS,5,Portugal
+QA,Asian,1,Qatar
+QA,HLS,2,Qatar
+QA,White,7,Qatar
+RU,Asian,1,Russian Federation
+RU,White,6,Russian Federation
+SE,MENA,1,Sweden
+SE,White,49,Sweden
+SG,Asian,76,Singapore
+SG,HLS,1,Singapore
+SG,White,23,Singapore
+SI,White,9,Slovenia
+SK,White,2,Slovakia
+TH,Asian,3,Thailand
+TH,White,4,Thailand
+TJ,White,8,Tajikistan
+TR,Asian,1,Turkey
+TR,MENA,2,Turkey
+TR,White,3,Turkey
+TW,Asian,32,"Taiwan, Province of China"
+TW,White,1,"Taiwan, Province of China"
+UG,Black,3,Uganda
+UK,Asian,3,United Kingdom
+UK,MENA,1,United Kingdom
+UK,White,29,United Kingdom
+US,Asian,912,United States
+US,Black,144,United States
+US,HLS,198,United States
+US,Indigenous,17,United States
+US,MENA,54,United States
+US,White,7142,United States
+VE,White,1,"Venezuela, Bolivarian Republic of"
+VN,White,1,Viet Nam
+ZA,Asian,1,South Africa
+ZA,Black,1,South Africa
+ZA,HLS,1,South Africa
+ZA,White,8,South Africa

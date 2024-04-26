@@ -1,0 +1,132 @@
+countrypred,genderpred,freq,country_full_name
+AE,Men,3,United Arab Emirates
+AM,,1,Armenia
+AR,Men,2,Argentina
+AR,,3,Argentina
+AT,Men,30,Austria
+AT,,13,Austria
+AU,Men,73,Australia
+AU,Non-Binary,1,Australia
+AU,,51,Australia
+BD,Men,1,Bangladesh
+BE,Men,43,Belgium
+BE,,23,Belgium
+BN,,1,Brunei Darussalam
+BR,Men,10,Brazil
+BR,,17,Brazil
+BS,Men,1,Bahamas
+BY,Men,1,Belarus
+CA,Men,148,Canada
+CA,,72,Canada
+CH,Men,40,Switzerland
+CH,,23,Switzerland
+CL,Men,18,Chile
+CL,,9,Chile
+CN,Men,68,China
+CN,,35,China
+CO,Men,5,Colombia
+CO,,3,Colombia
+CR,Men,5,Costa Rica
+CR,,1,Costa Rica
+CY,Men,1,Cyprus
+CY,,3,Cyprus
+CZ,Men,6,Czech Republic
+CZ,,4,Czech Republic
+DE,Men,171,Germany
+DE,,105,Germany
+DK,Men,21,Denmark
+DK,,18,Denmark
+EE,,5,Estonia
+EG,Men,2,Egypt
+EG,,3,Egypt
+ES,Men,33,Spain
+ES,,24,Spain
+ET,,1,Ethiopia
+FI,Men,21,Finland
+FI,,23,Finland
+FR,Men,19,France
+FR,,13,France
+GB,Men,188,United Kingdom
+GB,,109,United Kingdom
+GE,Men,1,Georgia
+GH,Men,2,Ghana
+GR,Men,5,Greece
+GR,,1,Greece
+HK,Men,6,Hong Kong
+HK,,2,Hong Kong
+HR,Men,1,Croatia
+HU,Men,3,Hungary
+HU,,4,Hungary
+ID,Men,1,Indonesia
+IE,Men,5,Ireland
+IE,,6,Ireland
+IL,Men,125,Israel
+IL,,102,Israel
+IN,Men,7,India
+IN,,6,India
+IR,Men,1,"Iran, Islamic Republic of"
+IR,,1,"Iran, Islamic Republic of"
+IS,Men,2,Iceland
+IS,,1,Iceland
+IT,Men,26,Italy
+IT,,10,Italy
+JP,Men,44,Japan
+JP,,17,Japan
+KE,,2,Kenya
+KH,Men,1,Cambodia
+KR,Men,47,"Korea, Republic of"
+KR,,36,"Korea, Republic of"
+LB,Men,10,Lebanon
+LB,,5,Lebanon
+LK,,1,Sri Lanka
+LT,,1,Lithuania
+LV,Men,2,Latvia
+MA,Men,1,Morocco
+MO,Men,1,Macao
+MX,Men,8,Mexico
+MX,,4,Mexico
+MZ,Men,1,Mozambique
+NG,Men,2,Nigeria
+NL,Men,197,Netherlands
+NL,,167,Netherlands
+NO,Men,16,Norway
+NO,,10,Norway
+NZ,Men,20,New Zealand
+NZ,,10,New Zealand
+PE,,1,Peru
+PH,Men,100,Philippines
+PH,,35,Philippines
+PL,Men,6,Poland
+PL,,5,Poland
+PT,Men,2,Portugal
+PT,,3,Portugal
+QA,Men,6,Qatar
+QA,,4,Qatar
+RU,Men,6,Russian Federation
+RU,,1,Russian Federation
+SE,Men,36,Sweden
+SE,,14,Sweden
+SG,Men,52,Singapore
+SG,,48,Singapore
+SI,Men,5,Slovenia
+SI,,4,Slovenia
+SK,,2,Slovakia
+TH,Men,2,Thailand
+TH,,5,Thailand
+TJ,Men,5,Tajikistan
+TJ,,3,Tajikistan
+TR,Men,4,Turkey
+TR,,2,Turkey
+TW,Men,11,"Taiwan, Province of China"
+TW,,22,"Taiwan, Province of China"
+UG,Men,2,Uganda
+UG,,1,Uganda
+UK,Men,24,United Kingdom
+UK,,9,United Kingdom
+US,Men,5164,United States
+US,Non-Binary,10,United States
+US,,3293,United States
+VE,,1,"Venezuela, Bolivarian Republic of"
+VN,,1,Viet Nam
+ZA,Men,6,South Africa
+ZA,,5,South Africa
