@@ -20,7 +20,7 @@ library(bookdown)
 
 # Interactive visualizations
 
-Interactive visualizations showing the distribution of race and gender in different countries/regions are available at [https://icaviz.netlify.app/](https://icaviz.netlify.app/).
+Interactive visualizations showing the distribution of race and gender in different countries/regions are available at [https://icavis.netlify.app/](https://icavis.netlify.app/).
 
 # Intercoder reliability 
 
