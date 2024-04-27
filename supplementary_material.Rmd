@@ -124,3 +124,11 @@ vif(model)
 ```{r}
 summary(model)
 ```
+
+# Figure captions list 
+
+Figure S1 **Number of publications for each journal by year**
+
+Figure S2 **Women proportion**
+
+Figure S3 **Women Proportion**
