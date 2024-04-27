@@ -5,6 +5,7 @@ header-includes:
   - \makeatletter
   - \def\fnum@figure{\figurename\thefigure}
   - \makeatother
+  - \usepackage{float}
 output: 
   bookdown::pdf_document2
 ---
@@ -42,11 +43,11 @@ knitr::include_graphics("figures/supplementary_material/num_pub_journal.png")
 See Figure S\@ref(fig:wp1) and Figure S\@ref(fig:wp2).
 
 
-```{r wp1, echo=FALSE, fig.cap="Women proportion", out.width = '50%'}
+```{r wp1, echo=FALSE, fig.cap="Women proportion", out.width = '50%', fig.pos = 'H'}
 knitr::include_graphics("figures/supplementary_material/women_prop_1.png")
 ```
 
-```{r wp2, echo=FALSE, fig.cap="Women proportion", out.width = '50%'}
+```{r wp2, echo=FALSE, fig.cap="Women proportion", out.width = '50%', fig.pos = 'H'}
 knitr::include_graphics("figures/supplementary_material/women_prop_2.png")
 ```
 
