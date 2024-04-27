@@ -1,5 +1,10 @@
 ---
 title: "Supplementary Material"
+header-includes:
+  - \renewcommand{\figurename}{Figure S}
+  - \makeatletter
+  - \def\fnum@figure{\figurename\thefigure}
+  - \makeatother
 output: 
   bookdown::pdf_document2
 ---
@@ -26,7 +31,7 @@ Note that when we calculated the gender intercoder reliability here, the sample 
 
 # Number of publications for each journal
 
-See Figure \@ref(fig:numofpub).
+See Figure S\@ref(fig:numofpub).
 
 ```{r numofpub, echo=FALSE, fig.cap="Number of publications for each journal by year", out.width = '50%'}
 knitr::include_graphics("figures/supplementary_material/num_pub_journal.png")
@@ -34,7 +39,7 @@ knitr::include_graphics("figures/supplementary_material/num_pub_journal.png")
 
 # Women proportion among authors of different racial groups
 
-See Figure \@ref(fig:wp1) and Figure \@ref(fig:wp2).
+See Figure S\@ref(fig:wp1) and Figure S\@ref(fig:wp2).
 
 
 ```{r wp1, echo=FALSE, fig.cap="Women proportion", out.width = '50%'}
