@@ -2,6 +2,8 @@
 
 ## Data
 
+You can also view the data at [https://docs.google.com/spreadsheets/d/1XsVUmM2UdyOF9q1idHG_gPN5Qv7VwhJAMMRRSfuFmSY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1XsVUmM2UdyOF9q1idHG_gPN5Qv7VwhJAMMRRSfuFmSY/edit?usp=sharing)
+
 ### papers_to_study_expanded.csv
 
 This data contains information about each paper article. 
